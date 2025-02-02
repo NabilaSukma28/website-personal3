@@ -1,0 +1,455 @@
+/* Reset Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffaf0; /* Warna krem untuk kesan cerah */
+  color: #333;
+  padding-bottom: 70px; /* Untuk navigasi bawah */
+}
+
+/* Header */
+.header {
+  background-color: #ff6f61; /* Merah cerah untuk promosi */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  margin: 20px auto;
+  padding: 10px;
+  gap: 10px;
+  background-color: #ffe8e8; /* Background lembut untuk carousel */
+  border-radius: 8px;
+  width: 90%; /* Menyisakan sedikit margin di samping */
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  background-color: #ff6f61; /* Warna merah untuk sorotan promosi */
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  min-width: 100%;
+}
+.promo-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Membatasi lebar carousel */
+}
+
+.carousel-items {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Animasi pergeseran */
+}
+
+.promo-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.promo-item h2 {
+  color: #28a745;
+  font-size: 24px;
+}
+
+.promo-item p {
+  font-size: 16px;
+  color: #333;
+}
+
+.carousel-btn {
+  background-color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  color: #bebfc1;
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+/* Promo Balance */
+.balance {
+  text-align: center;
+  background-color: #ffdd67; /* Kuning lembut */
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 8px;
+  width: 90%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.balance h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.balance span {
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+/* Promo Buttons */
+.promo-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 15px auto;
+  gap: 10px;
+  width: 90%;
+}
+
+.promo-buttons button {
+  flex: 1 1 45%; /* Tombol memenuhi 45% ruang */
+  padding: 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff6f61;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.promo-buttons button:hover {
+  background-color: #e64a3e; /* Warna lebih gelap untuk efek hover */
+  transform: scale(1.05);
+}
+
+/* Promo Section */
+.promo-section {
+  width: 90%;
+  margin: 15px auto;
+}
+
+.promo-section h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.promo-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffe8e8; /* Background lembut */
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.promo-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.promo-card p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.promo-card .price {
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+/* History Section */
+.history {
+  margin: 15px auto;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+
+.history h2 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.history li:last-child {
+  border-bottom: none;
+}
+
+.history .positive {
+  color: green;
+  font-weight: bold;
+}
+
+.history .negative {
+  color: red;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ff6f61;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  color: white;
+  font-size: 1.2em;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.bottom-nav a:hover {
+  color: #ffe8e8;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+
+.notification-icon {
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.promo-info-section {
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.promo-info-section h2 {
+  color: #333;
+}
+
+.promo-info-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.promo-info-section li {
+  background-color: #e0f7fa;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+
+.notification-icon {
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.klaim-voucher-section {
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.klaim-voucher-section h2 {
+  color: #333;
+}
+
+.voucher-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.voucher-card {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.voucher-card h3 {
+  color: #00796b;
+}
+
+.voucher-card p {
+  color: #555;
+}
+
+.notification-icon {
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.tukar-point-section {
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tukar-point-section h2 {
+  color: #333;
+}
+
+.point-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.point-card {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.point-card h3 {
+  color: #00796b;
+}
+
+.point-card p {
+  color: #555;
+}
+.notification-icon {
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.riwayat-section {
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.riwayat-section h2 {
+  color: #333;
+}
+
+.riwayat-card {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.riwayat-card h3 {
+  color: #00796b;
+  margin-bottom: 5px;
+}
+
+.riwayat-card p {
+  color: #555;
+  margin: 5px 0;
+}
+
+
+/* Kontainer Utama */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+/* Styling untuk bagian akun */
+.akun-section {
+  text-align: center;
+}
+
+.akun-card {
+  background-color: #fff3e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.akun-card h3 {
+  margin-top: 15px;
+  color: #ff7043;
+}
+
+/* Styling tombol di akun */
+.akun-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.akun-actions button {
+  background-color: #ff7043;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.akun-actions button:hover {
+  background-color: #e65100;
+}

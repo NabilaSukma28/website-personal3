@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akun Pengguna</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Promo Supermarket</h1>
+    <div class="notification-icon">🔔</div>
+  </header>
+
+  <!-- Akun Section -->
+  <section class="akun-section">
+    <h2>Informasi Akun</h2>
+
+    <div class="akun-card">
+      <h3>Nama Pengguna</h3>
+      <p>Nabila Sukma</p>
+
+      <h3>Email</h3>
+      <p>nabilasukma28@gmail.com</p>
+
+      <h3>Saldo Poin</h3>
+      <p>350 Poin</p>
+
+      <h3>Alamat Pengiriman</h3>
+      <p>Jl.R.A Kosasih Gg.Kalimantan No12</p>
+    </div>
+
+    <div class="akun-actions">
+      <button onclick="editProfile()">✏️ Edit Profil</button>
+      <button onclick="changePassword()">🔑 Ubah Kata Sandi</button>
+      <button id="logout-button">🚪 Logout</button>
+    </div>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="nav-link">🏠 Home</a>
+    <a href="produk.html" class="nav-link">🛒 Produk</a>
+    <a href="riwayat.html" class="nav-link">📜 Riwayat</a>
+    <a href="akun.html" class="nav-link">👤 Akun</a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermarket Promo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Promo Supermarket</h1>
+    <div class="notification-icon">🔔</div>
+  </header>
+
+  <!-- Carousel Promo -->
+  <div class="carousel" id="carousel">
+    <div class="carousel-item">🔥 Promo Diskon hingga 50% untuk produk tertentu!</div>
+  </div>
+<!-- Promo Section (Carousel) -->
+<section class="promo-section">
+  <div class="promo-carousel">
+      <button class="carousel-btn left">&lt;</button>
+      <div class="carousel-items">
+          <div class="promo-item">
+              <h2>Diskon Spesial JSM!</h2>
+              <p>Belanja lebih hemat dengan promo eksklusif hanya di supermarket kami!</p>
+          </div>
+          <div class="promo-item">
+              <h2>Diskon Spesial PSM!</h2>
+              <p>Harga promo untuk produk tertentu yang Anda sukai!</p>
+          </div>
+          <div class="promo-item">
+              <h2>Diskon Spesial PWP!</h2>
+              <p>Jangan lewatkan promo hebat di supermarket kami.</p>
+          </div>
+      </div>
+      <button class="carousel-btn right">&gt;</button>
+  </div>
+</section>
+
+  <!-- Special Balance Section -->
+  <div class="balance">
+    <h2>Saldo Poin Anda: <span>Rp 350</span></h2>
+    <p>Gunakan untuk diskon tambahan di transaksi berikutnya!</p>
+  </div>
+
+  <!-- Promo Buttons -->
+<div class="promo-buttons">
+  <button onclick="openPage('produk')">🛒 Lihat Produk</button>
+  <button onclick="openPage('tukar-poin')">💳 Tukar Poin</button>
+  <button onclick="openPage('klaim-voucher')">🎟 Klaim Voucher</button>
+  <button onclick="openPage('info-promo')">📢 Info Promo</button>
+</div>
+
+  <!-- Product Promotion Section -->
+  <div class="promo-section">
+    <h2>Promo Minggu Ini</h2>
+    <div class="promo-card">
+      <img src="coklat.jpg" alt="Produk 1">
+      <p>🍫 Cokelat - Diskon 30%</p>
+      <p class="price">Rp 20,000</p>
+    </div>
+    <div class="promo-card">
+      <img src="daging.jpg" alt="Produk 2">
+      <p>🥩 Daging Sapi - Diskon 20%</p>
+      <p class="price">Rp 80,000/kg</p>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="#" class="nav-link">🏠 Home</a>
+    <a href="#" class="nav-link">🛒 Produk</a>
+    <a href="#" class="nav-link">📜 Riwayat</a>
+    <a href="#" class="nav-link">👤 Akun</a>
+  </nav>
+  
+  <script src="script.js"></script>
+</body>
+</html>
